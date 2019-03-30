@@ -1,33 +1,69 @@
-.App {
-  text-align: center;
+h2,
+h3,
+h4,
+h5,
+p{
+   font-family: "Fira Sans", sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.header-color{
+   background: #4169E1;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(109.6deg,  rgba(255,102,0,1) 11.2%, rgba(65,105,225,1) 91.1%);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(109.6deg,  rgba(255,102,0,1) 11.2%, rgba(65,105,225,1) 91.1%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.landing-grid{
+   background: #4169E1;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(109.6deg,  rgba(255,102,0,1) 11.2%, rgba(65,105,225,1) 91.1%);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(109.6deg,  rgba(255,102,0,1) 11.2%, rgba(65,105,225,1) 91.1%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   height: 100%;
+   left: 0;
+   position: fixed;
+   text-align: center;
+   width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.avatar-img{
+   height: 210px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner-text{
+   background-color: black;
+   border-radius: 8px;
+   margin: auto;
+   opacity: .8;
+   width: 80%;
+}
+
+.banner-text h1 {
+   color: white;
+   font-family: "Fira Sans", sans-sans-serif;
+   font-size: 55px;
+   font-weight: bold;
+   padding: .1em;
+}
+
+.banner-text hr {
+   border-top: 5px solid white;
+   margin: auto;
+   width: 50%;
+}
+
+.banner-text p {
+   color: white;
+   font-size: 21px;
+   padding: 1em;
+}
+
+.social-links{
+   display: flex;
+   justify-content: space-between;
+   margin: auto;
+   width: 50%;
+}
+
+.social-links i{
+   color: white;
+   font-size: 5em;
+   padding: 8px;
 }
