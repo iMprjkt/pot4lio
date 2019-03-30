@@ -12,6 +12,7 @@ p{
    background: linear-gradient(109.6deg,  rgba(255,102,0,1) 11.2%, rgba(65,105,225,1) 91.1%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+/* Landing page + Contact page CSS*/
 .landing-grid{
    background: #4169E1;  /* fallback for old browsers */
    background: -webkit-linear-gradient(109.6deg,  rgba(255,102,0,1) 11.2%, rgba(65,105,225,1) 91.1%);  /* Chrome 10-25, Safari 5.1-6 */
@@ -66,4 +67,105 @@ p{
    color: white;
    font-size: 5em;
    padding: 8px;
+}
+
+
+/* Resume Page css */
+.resume-right-col {
+  background: #27221F;
+  color: white;
+  padding: 2em;
+}
+
+/* contact page css */
+
+.contact-body {
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  background: white;
+  color: black;
+  margin-bottom: 21px;
+}
+
+.contact-grid h2 {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.contact-grid p {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list i {
+  font-size: 54px;
+  padding-right: 5rem;
+}
+
+
+/* contact page css */
+
+.avatar-img {
+  height: 250px;
+  padding-top: 5em;
+}
+
+.banner-text {
+  background-color: black;
+  opacity: .8;
+  width: 75%;
+  margin: auto;
+  border-radius: 13px;
+}
+
+.banner-text h1 {
+  font-size: 54px;
+  font-weight: bold;
+  color: white;
+}
+
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text p {
+  color: white;
+  font-size: 21px;
+  padding: 1em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  color: white;
+  font-size: 5em;
+  padding: 8px;
+}
+
+/* Projects page CSS */
+.projects-grid {
+  display:flex;
 }
