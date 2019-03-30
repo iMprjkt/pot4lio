@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
+import { Grid, Cell} from 'react-mdl';
+import avatar from './img/avatar.png';
+
 
 class Contact extends Component {
   render() {
@@ -9,50 +11,34 @@ class Contact extends Component {
           <Cell col={6}>
             <h2>Imani Matafu</h2>
             <img
-              src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
+              src={avatar}
               alt="avatar"
               style={{height: '250px'}}
                />
-             <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+             <h3>Web Solutions Architect</h3>
 
           </Cell>
           <Cell col={6}>
             <h2>Contact Me</h2>
             <hr/>
-
-            <div className="contact-list">
-              <List>
-                <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-phone-square" aria-hidden="true"/>
-                    (623) 000-7890
-                  </ListItemContent>
-                </ListItem>
-
-                <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-fax" aria-hidden="true"/>
-                    (123) 456-7890
-                  </ListItemContent>
-                </ListItem>
-
-                <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-envelope" aria-hidden="true"/>
-                    someone@example.com
-                  </ListItemContent>
-                </ListItem>
-
-                <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-skype" aria-hidden="true"/>
-                    MySkypeID
-                  </ListItemContent>
-                </ListItem>
-
-
-              </List>
-            </div>
+              <div class="contact-content">
+                <div class="contact-details">
+                 <h5>Address</h5>
+                 <p>Sayansi, Kijitonyama, Dar es Salaam</p>
+               </div>
+             </div>
+             <div class="contact-content">
+               <div class="contact-details">
+                 <h5>Call Us</h5>
+                 <p>Redacted</p>
+               </div>
+             </div>
+             <div class="contact-content">
+               <div class="contact-details">
+                 <h5>Enquiries</h5>
+                 <p>github.com/iMprojekt</p>
+               </div>
+             </div>
           </Cell>
         </Grid>
       </div>

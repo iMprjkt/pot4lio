@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
-import Education from './education';
+import Training from './training';
 import Experience from './experience';
 import Skills from './skills';
+import avatar from './img/avatar.png';
+
 
 class Resume extends Component {
   render() {
@@ -11,81 +13,72 @@ class Resume extends Component {
           <Cell col={4}>
             <div style={{textAlign: 'center'}}>
               <img
-                src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
+                src={avatar}
                 alt="avatar"
-                style={{height: '200px'}}
+                style={{height: '210px'}}
                  />
             </div>
 
-            <h2 style={{paddingTop: '2em'}}>Paul Hanna</h2>
-            <h4 style={{color: 'grey'}}>Programmer</h4>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            <h2 style={{paddingTop: '.1em'}}>Imani Matafu</h2>
+            <h4 style={{color: 'grey'}}>Solutions Architect</h4>
+            <hr style={{borderTop: '3px solid #7851a9', width: '50%'}}/>
+            <p>I'm a <strong>Web Solutions Architect</strong> from Dar es Salaam, Tanzania. My goal is to provide real working solutions to global challenges</p>
+            <hr style={{borderTop: '3px solid #7851a9', width: '50%'}}/>
             <h5>Address</h5>
-            <p>1 Hacker Way Menlo Park, 94025</p>
+            <p>COSTECH Building, Kijitonyama, 14113</p>
             <h5>Phone</h5>
-            <p>(123) 456-7890</p>
+            <p>redacted</p>
             <h5>Email</h5>
-            <p>someone@example.com</p>
-            <h5>Web</h5>
-            <p>mywebsite.com</p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            <p>redacted</p>
+            <hr style={{borderTop: '3px solid #7851a9', width: '50%'}}/>
           </Cell>
           <Cell className="resume-right-col" col={8}>
-            <h2>Education</h2>
-
-
-            <Education
-              startYear={2002}
-              endYear={2006}
-              schoolName="My University"
-              schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-               />
-
-               <Education
-                 startYear={2007}
-                 endYear={2009}
-                 schoolName="My 2nd University"
-                 schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-                  />
-                <hr style={{borderTop: '3px solid #e22947'}} />
-
-              <h2>Experience</h2>
-
+            <h2>Experience</h2>
             <Experience
-              startYear={2009}
-              endYear={2012}
-              jobName="First Job"
-              jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+              startYear={2016}
+              endYear={"Present"}
+              jobName="Chief Lead"
+              companyName="Kabolik Ltd"
+              jobDescription="Lead the operations of a company"
               />
-
               <Experience
-                startYear={2012}
-                endYear={2016}
-                jobName="Second Job"
-                jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                startYear={2018}
+                endYear={2018}
+                jobName="Chief Lead"
+                companyName="Aforevo (MBI) Ltd"
+                jobDescription="Lead a team of online media professional"
                 />
-              <hr style={{borderTop: '3px solid #e22947'}} />
+              <hr style={{borderTop: '3px solid #7851a9'}} />
+            <h2>Training</h2>
+            <Training
+              startYear={2018}
+              endYear={2019}
+              courseName="Full Stack Web Developer"
+              schoolName="Andela Learning Community"
+              schoolDescription="Andela builds distributed engineering teams with Africa’s most talented software developers."
+               />
+            <Training
+              startYear={2016}
+              endYear={2017}
+              courseName="Project Management Professional"
+              schoolName="EduCBA"
+              schoolDescription="leading global provider of skill based education addressing the needs 500,000+ members across 40+ Countries"
+                />
+              <hr style={{borderTop: '3px solid #ff6600'}} />
+
               <h2>Skills</h2>
               <Skills
-                skill="javascript"
-                progress={100}
+                skill="JavaScript"
+                progress={55}
                 />
                 <Skills
                   skill="HTML/CSS"
                   progress={80}
                   />
                   <Skills
-                    skill="NodeJS"
-                    progress={50}
+                    skill="UI/UX"
+                    progress={90}
                     />
-                    <Skills
-                      skill="React"
-                      progress={25}
-                      />
-
-
           </Cell>
         </Grid>
       </div>

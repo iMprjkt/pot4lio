@@ -9,6 +9,7 @@ class Experience extends Component {
           <p>{this.props.startYear} - {this.props.endYear}</p>
         </Cell>
         <Cell col={8}>
+           <h3 style={{marginTop:'0px'}}>{this.props.companyName}</h3>
           <h4 style={{marginTop:'0px'}}>{this.props.jobName}</h4>
           <p>{this.props.jobDescription}</p>
         </Cell>
